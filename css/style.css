@@ -1,0 +1,56 @@
+/*
+Slider
+*****************/
+
+	
+	.owl-slide {
+		background-image: url('https://images.unsplash.com/photo-1437915015400-137312b61975?fit=crop&fm=jpg&h=800&q=80&w=1200');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 870px;
+	}
+	
+
+/* xampslider Caption */
+.xampslider-caption{ left:5%; position:absolute; padding:4% 0 4% 4%; top:52%; z-index:8; width:80%; -webkit-transform:translateY(-60%); -ms-transform:translateY(-60%); transform:translateY(-60%); -webkit-box-sizing:border-box; box-sizing:border-box; border-left:15px solid #ff5951;}
+.xampslider-caption div{ font:700 50px/58px 'Oswald'; color:#ffffff; text-transform:uppercase; display:block; position:relative; margin:0 0 20px;}
+.xampslider-caption a div{ display:block; }
+.xampslider-caption p { font:400 20px 'Oswald'; color:#ffffff; letter-spacing:1.5px; line-height:normal; display:block; position:relative; margin:0 0 20px;}
+.xampslider-caption:before { content:''; position:absolute; left:0; top:0; width:35%; height:15px; background-color:#ff5951;}
+.xampslider-caption:after { content:''; position:absolute; left:0; bottom:0; width:35%; height:15px; background-color:#ff5951;}
+
+
+/* Animation Effects */
+.xt_bar_inner { height:5px; position:relative; width:90px; background-color:#ffffff; margin-left:10px; margin-bottom:15px;}
+.xt_bar_inner:before { content:''; position:absolute; left:0; top:50%; transform:translateY(-50%); border:6px solid #ff5951; border-radius:50%; background-color: #ff5951; -webkit-animation-duration:3s; animation-duration:3s; -webkit-animation-timing-function:linear; animation-timing-function:linear; -webkit-animation-iteration-count:infinite; animation-iteration-count:infinite; -webkit-animation-name:move_title_bg; animation-name:move_title_bg1;}
+.xt_bar_inner:after { content:''; position:absolute; right:0; top:50%; transform:translateY(-50%); border:6px solid #ff5951; border-radius:50%; background-color:#ff5951; -webkit-animation-duration:3s; animation-duration:3s; -webkit-animation-timing-function:linear; animation-timing-function:linear; -webkit-animation-iteration-count:infinite; animation-iteration-count:infinite; -webkit-animation-name:move_title_bg; animation-name:move_title_bg2;}
+
+@keyframes move_title_bg1 {
+    0% {
+        left: 0;
+      }
+    100% {
+        left: 100%;
+      }
+}
+
+@keyframes move_title_bg2 {
+    0% {
+        right: 0;
+      }
+    100% {
+    right: 100%;
+    }
+}
+
+
+a.xampsliderbtn { position:relative; color:#ffffff; padding:12px 32px; font:700 15px/18px 'Oswald'; display:inline-block; letter-spacing:3px; -webkit-transition:all 0.3s ease 0s; transition:all 0.3s ease 0s;}
+a.xampsliderbtn:before {border:2px solid #ffffff;-webkit-transform:scale(1); -ms-transform:scale(1); transform:scale(1); opacity:1; visibility:visible;}
+a.xampsliderbtn:after { -webkit-transform:scale(.5); -ms-transform:scale(.5); transform:scale(.5); opacity:0; visibility:hidden; background-color:#ff5951;}
+a.xampsliderbtn:before, a.xampsliderbtn:after { content:''; height:100%; width:100%; top:0; left:0; z-index:-1; position:absolute; -webkit-transition:all 0.3s ease-out; transition:all 0.3s ease-out;}
+a.xampsliderbtn:hover { color:#ffffff;}
+a.xampsliderbtn:hover::before { -webkit-transform:scale(1.3); -ms-transform:scale(1.3); transform:scale(1.3); opacity:0; visibility:hidden;}
+a.xampsliderbtn:hover::after { -webkit-transform:scale(1); -ms-transform:scale(1); transform:scale(1); opacity:1; visibility:visible;}
+
+	
